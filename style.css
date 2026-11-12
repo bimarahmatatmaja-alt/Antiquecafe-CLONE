@@ -1,0 +1,655 @@
+/* Pengaturan Dasar */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* 1. Header dan Topbar */
+.top-bar {
+  background-color: #EAE6DF;
+  padding: 10px;
+  font-size: 13px;
+  word-spacing: 11px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dddddd;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+}
+
+/* Halaman Utama */
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('home-background.jpg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh; /* Memenuhi 80% tinggi layar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  max-width: 600px;
+  padding: 20px;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.features-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 80px 8%;
+  background-color: white;
+}
+
+.features-image img {
+  width: 350px;
+  height: auto;
+  display: block;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  max-width: 650px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.feature-icon {
+  font-size: 32px;
+  width: 40px;
+  text-align: center;
+}
+
+.feature-text h3 {
+  margin: 0 0 6px 0;
+  color: #222;
+  font-size: 1.2rem;
+}
+
+.feature-text p {
+  margin: 0;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+
+/* Menu */
+
+.menu-container {
+   background-color: #EAE6DF;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 80px 8%;
+ 
+}
+
+.menu-image img {
+  width: 250px;
+  height: auto;
+  display: block;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  max-width: 650px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.menu-text h3 {
+  margin: 0 0 6px 0;
+  color: #222;
+  font-size: 1.2rem;
+}
+
+.menu-text p {
+  margin: 0;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+
+
+
+/* Contact Us */
+.footer-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('footer.jpg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 80px 8%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 320px;
+  max-width: 550px;
+}
+
+.footer-left h3 {
+  font-size: 1.8rem;
+  margin: 0 0 5px 0;
+}
+
+.footer-left .subtitle {
+  font-size: 1rem;
+  margin: 0 0 25px 0;
+  color: #ddd;
+}
+
+.hours-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.hour-row {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Garis putih transparan */
+  font-size: 0.95rem;
+}
+
+.footer-call {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.footer-call a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-right {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.footer-right h3 {
+  font-size: 1.8rem;
+  margin: 0 0 15px 0;
+  letter-spacing: 1px;
+}
+
+.footer-right .phone {
+  font-size: 1.4rem;
+  margin: 0 0 10px 0;
+  color: #fff;
+}
+
+.footer-right .address {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #ddd;
+  line-height: 1.4;
+}
+
+.footer-right .email {
+  font-size: 1.1rem;
+  margin: 0 0 10px 0;
+  color: #fff;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  box-sizing: border-box;
+  outline: none;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #EAE5D9;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #dcd6cd;
+}
+
+   /* OUR MENU HERO */
+
+
+.menu-hero {
+    width: 100%;
+    height: 600px;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+        url("ourmenu-background.jpg.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-hero h1 {
+    color: white;
+    font-size: 85px;
+    font-weight: bold;
+}
+
+
+/* HALAMAN BREAKFAST */
+.breakfast-section {
+    width: 100%;
+    padding: 60px 5%;
+    background: white;
+    text-align: left;
+}
+
+.breakfast-section > h1 {
+    font-size: 65px;
+    color: #626262;
+    margin-bottom: 30px;
+}
+
+.breakfast-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7%;
+}
+
+.breakfast-column {
+    width: 100%;
+}
+
+.food-item {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.food-item h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.food-item p {
+    font-size: 13px;
+    color: #999;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.extras-title {
+    font-size: 45px;
+    color: #626262;
+    margin: 25px 0 30px;
+}
+
+.extra-item {
+    margin-bottom: 35px;
+}
+
+
+
+
+
+
+/* CONTACT US */
+
+.contact-page {
+    width: 100%;
+    min-height: 100vh;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.60),
+            rgba(0, 0, 0, 0.60)
+        ),
+        url("footer.jpg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 60px 8%;
+    box-sizing: border-box;
+
+    color: white;
+}
+
+.contact-layout {
+    max-width: 1450px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+
+    gap: 10%;
+
+    align-items: start;
+}
+
+
+
+.contact-hours {
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+}
+
+.contact-hours h2 {
+    font-size: 30px;
+    font-weight: 500;
+
+    margin: 0 0 12px;
+}
+
+.contact-subtitle {
+    font-size: 20px;
+    margin: 0 0 5px;
+}
+
+.kitchen-info {
+    font-size: 16px;
+    line-height: 1.5;
+
+    margin: 0 0 50px;
+}
+
+
+.working-hours-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.working-hour {
+    display: flex;
+    justify-content: space-between;
+
+    gap: 10px;
+
+    padding-bottom: 15px;
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.4);
+
+    font-size: 17px;
+}
+
+
+/* CONTACT US */
+
+.contact-call {
+    border-top: 1px solid white;
+
+    margin-top: 20px;
+    padding-top: 22px;
+
+    text-align: center;
+
+    font-size: 27px;
+    font-weight: 500;
+}
+
+
+.contact-information h1 {
+    font-size: 48px;
+    font-weight: bold;
+
+    margin: -10px 0 30px;
+}
+
+.contact-phone {
+    font-size: 29px;
+    margin: 0 0 35px;
+}
+
+.contact-email {
+    font-size: 25px;
+    margin: 0 0 35px;
+}
+
+.contact-address {
+    font-size: 25px;
+    line-height: 1.4;
+
+    margin: 0 0 35px;
+}
+
+
+
+   /* CONTACT FORMULIR */
+
+
+.antique-contact-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.antique-contact-form input,
+.antique-contact-form textarea {
+
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 17px 22px;
+
+    border: none;
+    border-radius: 4px;
+
+    background-color: white;
+    color: #333;
+
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+
+    outline: none;
+}
+
+.antique-contact-form input {
+    height: 58px;
+}
+
+.antique-contact-form textarea {
+    min-height: 135px;
+    resize: vertical;
+}
+
+
+
+.antique-contact-form input:focus,
+.antique-contact-form textarea:focus {
+    outline: 2px solid #c5bba9;
+}
+
+
+
+.antique-contact-form button {
+
+    height: 58px;
+
+    border: none;
+    border-radius: 4px;
+
+    background-color: #EAE6DF;
+    color: #333;
+
+    font-size: 19px;
+    font-family: Arial, sans-serif;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.antique-contact-form button:hover {
+    background-color: #d5cec1;
+}
+
+
+
+   /* RESPONSIVE */
+
+
+@media (max-width: 768px) {
+
+    .contact-page {
+        padding: 35px 20px;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .contact-hours {
+        padding: 22px;
+    }
+
+    .contact-hours h2 {
+        font-size: 25px;
+    }
+
+    .kitchen-info {
+        margin-bottom: 30px;
+    }
+
+    .working-hour {
+        font-size: 14px;
+    }
+
+    .contact-call {
+        font-size: 21px;
+    }
+
+    .contact-information h1 {
+        font-size: 32px;
+        margin-top: 0;
+    }
+
+    .contact-phone {
+        font-size: 23px;
+    }
+
+    .contact-email,
+    .contact-address {
+        font-size: 18px;
+    }
+
+    .antique-contact-form input {
+        height: 52px;
+    }
+
+}
